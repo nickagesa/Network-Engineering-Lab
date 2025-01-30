@@ -11,12 +11,12 @@ configure terminal
 hostname DMZ-switch
 enable password Simba
 
-! Banner Massage Of The Day
+! **Banner Massage Of The Day**
 banner motd *UNAUTHORIZED ACCESS IS SUBJECT TO JAIL TIME*!!!
 username admin password Simba
 ip domain-name simba.co.ke
 
-! Password for console 0
+! **Password for console 0**
 line console 0
 password Simba
 login
@@ -42,10 +42,10 @@ name WLAN
 vlan 101
 name voIP
 
-! To see the vlans created
+! **To see the vlans created**
 do show vlan
 
-! Assigning ports to vlans
+! **Assigning ports to vlans**
 interface range fa0/3-11
 switchport mode access
 switchport access vlan 50
@@ -69,7 +69,7 @@ exit
 
 do write
 
-! To see the vlans and assigned ports
+! **To see the vlans and assigned ports**
 show ip interface brief
 
 
@@ -83,11 +83,11 @@ name WLAN
 vlan 101
 name voIP
 
-! To see the vlans created
+! **To see the vlans created**
 do show vlan
 
-! Assigning ports to vlans
-! The Wireless Lan Controller (WLC) should be in the same vlan as the Light Access Points(LAP)
+! **Assigning ports to vlans**
+! **The Wireless Lan Controller (WLC) should be in the same vlan as the Light Access Points(LAP)**
 int Gig1/0/2
 switchport mode access
 switchport access vlan 60
