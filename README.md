@@ -101,7 +101,8 @@ The final design must integrate these requirements to ensure a secure, scalable,
 
 
 ### Network Diagram
-![image](https://github.com/user-attachments/assets/df57ded0-37be-4541-8ad4-b3ecf4eceb97)
+![image](https://github.com/user-attachments/assets/05eb616a-e847-4351-b72e-04a809aa70f3)
+
 
 ## Workflow
 1.	Threat Generation and Detection:
