@@ -38,3 +38,16 @@ exit
 write memory
 
 ```
+
+## OSPF configuration on the firewall, routers and switch
+```
+ip routing
+router ospf 35
+router-id 1.1.3.3
+network 10.30.30.0 255.255.255.252 area 0
+network 10.10.10.0 255.255.255.240 area 0
+network 197.200.100.0 255.255.255.252 area 0
+
+exit
+write memory
+```
