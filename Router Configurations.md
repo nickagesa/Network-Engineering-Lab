@@ -58,7 +58,9 @@ exit
 do write
 ```
 ## OSPF configuration on the firewall, routers and switch
+We Only advertise networks connected to the router.
 
+### Zuku Router
 ```
 ip routing
 router ospf 35
@@ -67,7 +69,10 @@ network 197.200.100.0 0.0.0.3 area 0
 network 20.20.20.0 0.0.0.3 area 0
 exit
 do write
+```
 
+### Azure Router
+```
 ip routing
 router ospf 35
 router-id 1.1.5.5
