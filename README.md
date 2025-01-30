@@ -17,7 +17,7 @@ To support its ICT infrastructure, Simba Telecom has subscribed to Zuku as its I
 -	One Cisco Wireless LAN Controller (WLC)
 -	Six Lightweight Access Points (LAPs)
 
-Simba Telecom employs Windows Server 2022 to manage its Active Directory and RADIUS Server. These systems are also responsible for DNS services and allocating IPv4 addresses to DHCP hosts within the network. The company internally hosts critical systems, including an *ERP platform, email server*, and file server. Additionally, Cisco Voice Gateways provide VoIP services, while the Cisco WLC enables centralized management of access points.
+Simba Telecom employs Windows Server 2022 to manage its Active Directory and RADIUS Server. These systems are also responsible for DNS services and allocating IPv4 addresses to DHCP hosts within the network. The company internally hosts critical systems, including an #ERP platform, email server#, and file server. Additionally, Cisco Voice Gateways provide VoIP services, while the Cisco WLC enables centralized management of access points.
 
 As a core aspect of its business operations, Simba Telecom leverages the Microsoft Azure cloud platform for service delivery. Developers and cloud engineers utilize Azure resources such as virtual machines, blob storage, networking tools, and security features to ensure seamless business continuity. The proposed network infrastructure must enable the team to access these resources efficiently and securely.
 
