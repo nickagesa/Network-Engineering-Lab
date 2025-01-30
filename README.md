@@ -97,7 +97,8 @@ The final design must integrate these requirements to ensure a secure, scalable,
 ![image](https://github.com/user-attachments/assets/332e71ac-6891-44e5-a6f2-0d3056a50567)
 
 **Between the Firewall, Routers and Layer-3 Switch**
-![image](https://github.com/user-attachments/assets/f3fa90bb-4a9f-423a-8b5e-20e65c28177f)
+![image](https://github.com/user-attachments/assets/20e692a2-39de-400c-a729-e8d4effe1fd5)
+
 
 
 
