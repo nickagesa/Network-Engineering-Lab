@@ -1,6 +1,6 @@
 # Basic Switch Configurations
 The following commands were used to configure Hostname, Username, password and domain name on the DMZ-switch.
-These commands were copied to help configure the other switches and the VoIP-Router. I just changed the hostname to the respective switch/Router name i.e simba-assess-switch_1, VoIP-Router, simba-core-switch etc.
+These commands were copied to help configure the other switches. I just changed the hostname to the respective switch name i.e simba-assess-switch_1, simba-core-switch etc.
 
 **Note**: Comments in Cisco CLI are done like this:
 **! This is a comment explaining the purpose of the following configuration**
