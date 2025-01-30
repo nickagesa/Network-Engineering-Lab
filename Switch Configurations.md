@@ -223,6 +223,8 @@ do write
 
 ### Simba-Core-switch
 Multilayer switches act as both router and switch. Use ip routing command to enable routing.
+We advertised 3 networks LAN, WLAN (Wireless Controller LAN) and inside zone. We also used the networks wild cards.
+
 ```
 ip routing
 router ospf 35
