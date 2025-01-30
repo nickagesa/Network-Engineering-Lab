@@ -111,6 +111,6 @@ The final design must integrate these requirements to ensure a secure, scalable,
 - <a href="https://github.com/nickagesa/Detection-Lab/tree/main">Firewall Configurations</a>
 
 ```
-print("Hello, World!")
+Hello, World!
 ```
 
