@@ -40,6 +40,8 @@ write memory
 ```
 
 ## OSPF configuration on the firewall, routers and switch
+We advertised 3 networks Inside Zone, DMZ and Outside Zone. 
+There is no need to use wild cards in firewall, since it only uses subnet mask.
 ```
 ip routing
 router ospf 35
