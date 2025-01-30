@@ -92,8 +92,9 @@ The network will utilize the following IP address ranges:
 The final design must integrate these requirements to ensure a secure, scalable, and highly available network infrastructure. The solution should optimize performance, support future growth, and align with industry best practices.
 
 
-## Architecture
-![image](https://github.com/user-attachments/assets/5aef55e9-bb00-4be4-90bd-71726153a66f)
+## Subnetting
+![image](https://github.com/user-attachments/assets/332e71ac-6891-44e5-a6f2-0d3056a50567)
+
 
 ![image](https://github.com/user-attachments/assets/754cbc0e-942d-4dd3-a646-cf1022a6c686)
 
