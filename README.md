@@ -4,6 +4,9 @@
 
 This project demonstrates the design and implementation of a secure and scalable telecom network, incorporating firewall security, VLANs, VoIP, and inter-VLAN routing.
 
+### Download Packet Tracer File with Network design
+<a href="https://github.com/nickagesa/Network-Engineering-Lab/blob/main/Simba%20Telecom%20Network%20Design.pkt">Simba Telecom Network Design.pkt</a>
+
 ## Senario
 ### Design and Implementation of a Secure Network System for Simba Telecom
 
