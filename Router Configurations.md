@@ -40,3 +40,20 @@ exit
 
 do write
 ```
+
+### Azure Cloud
+```
+enable
+configure terminal
+interface GigabitEthernet0/0
+no shut
+ip address 20.20.20.2 255.255.255.252
+exit
+
+interface GigabitEthernet0/1
+no shut
+ip address 30.30.30.1 255.0.0.0
+exit
+
+do write
+```
