@@ -14,13 +14,13 @@ Simba Telecom is a rapidly growing telecommunications company in Kenya that prov
 
 To support its ICT infrastructure, Simba Telecom has subscribed to Zuku as its Internet Service Provider (ISP). The company has invested in robust networking equipment, including:
 
--	One Cisco ASA 5525-X Firewall
--	One Catalyst 3850 48-Port Switch
--	Three Catalyst 2960 48-Port Switches
--	Two Catalyst 2960 24-Port Switches
--	One Cisco Voice Gateway
--	One Cisco Wireless LAN Controller (WLC)
--	Six Lightweight Access Points (LAPs)
+-	**One Cisco ASA 5525-X Firewall**
+-	**One Catalyst 3850 48-Port Switch**
+-	**Three Catalyst 2960 48-Port Switches**
+-	**Two Catalyst 2960 24-Port Switches**
+-	**One Cisco Voice Gateway**
+-	**One Cisco Wireless LAN Controller (WLC)**
+-	**Six Lightweight Access Points (LAPs)**
 
 Simba Telecom employs Windows Server 2022 to manage its Active Directory and RADIUS Server. These systems are also responsible for DNS services and allocating IPv4 addresses to DHCP hosts within the network. The company internally hosts critical systems, including an **ERP platform, email server**, and **file server**. Additionally, Cisco Voice Gateways provide VoIP services, while the Cisco WLC enables centralized management of access points.
 
