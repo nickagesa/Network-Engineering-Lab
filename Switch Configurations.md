@@ -98,7 +98,7 @@ do write
 ## Configuring EtherChannel, STP Portfast and BPDUguard.
 These commands were copied to help configure the other simba-assess-switch_1, simba-assess-switch_2 and simba-assess-switch_3. I just changed the channel-group  & port-channel to 2 and 3 respectively. 
 
-#### simba-assess-switch_1
+#### Simba-assess-switch_1
 ```
 int range fa0/1-2
 channel-group 1 mode active
@@ -118,7 +118,7 @@ do write
 do show start
 ```
 
-#### simba-assess-switch_2
+#### Simba-assess-switch_2
 ```
 int range fa0/1-2
 channel-group 2 mode active
@@ -135,7 +135,7 @@ exit
 do write
 ```
 
-#### simba-assess-switch_3
+#### Simba-assess-switch_3
 ```
 int range fa0/1-2
 channel-group 3 mode active
@@ -151,7 +151,7 @@ spanning-tree bpduguard enable
 exit
 do write
 ```
-### simba-Core-switch
+### Simba-Core-switch
 Configure EtherChannel, STP Portfast, BPDUguard and Trunk for the Core Switch
 ```
 ! **From simba-assess-switch_1**
@@ -187,3 +187,37 @@ interface range gig1/0/3
 switchport mode trunk
 exit
 ```
+
+## Assigning Ip Addresses to Simba-Core-Switch 
+
+```
+! **This command was used to assign an Ip address to the interface facing the Firewall
+! **The no switchport command switches the port from layer 2 to layer 3
+interface gig1/0/1
+no switchport
+ip address 10.30.30.2 255.255.255.252
+exit
+do write
+```
+## Inter-VLAN routing and ip dhcp helper addresses.
+The following commands were done on **Simba-Core-Switch**. 
+Ip helper address allows the host devices to reach the DHCP Server (10.10.10.3). This would help the host machines to contact DHCP to gain IP addresses.
+
+```
+! **Inter-vlan routing SVI(Switched Virtual Interface)**
+int vlan 50
+no shut
+ip address 192.168.10.1 255.255.255.0
+ip helper-address 10.10.10.3
+exit
+
+int vlan 60
+no shut
+ip address 10.20.0.1 255.255.0.0
+ip helper-address 10.10.10.3
+exit
+
+do write
+```
+
+
