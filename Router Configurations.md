@@ -1,6 +1,7 @@
-# Basic Switch Configurations
+# Basic Router Configurations
 The following commands were used to configure Hostname, Username, password and domain name on the VoIP-Router.
 
+### voIP Router
 ```
 enable
 configure terminal
@@ -17,4 +18,25 @@ line console 0
 password Simba
 login
 exit
+
+no ip domain-lookup
+service password-encryption
+do write
+
+```
+### Zuku Router
+```
+enable
+configure terminal
+interface GigabitEthernet0/0
+no shut
+ip address 197.200.100.1 255.255.255.252
+exit
+
+interface GigabitEthernet0/1
+no shut
+ip address 20.20.20.1 255.255.255.252
+exit
+
+do write
 ```
