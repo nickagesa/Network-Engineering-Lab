@@ -221,5 +221,18 @@ do write
 ```
 ## OSPF configuration on the firewall, routers and switch
 
+### Simba-Core-switch
+Multilayer switches act as both router and switch. Use ip routing command to enable routing.
+```
+ip routing
+router ospf 35
+router-id 1.1.2.2
+network 192.168.10.0 0.0.0.255 area 0
+network 10.20.0.0 0.0.255.255 area 0
+network 10.30.30.0 0.0.0.3 area 0
+exit
+do write
+
+```
 
 
