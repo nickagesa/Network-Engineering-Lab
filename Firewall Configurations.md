@@ -157,5 +157,6 @@ access-group INSIDE-OUTSIDE in interface OUTSIDE
 
 write memory
 ```
+## Firewall inspection policy configuration and NAT
 
 
