@@ -107,7 +107,13 @@ The final design must integrate these requirements to ensure a secure, scalable,
 ![image](https://github.com/user-attachments/assets/05eb616a-e847-4351-b72e-04a809aa70f3)
 
 ## Configurations
-- <a href="Switch Configurations.md">Switch Configurations</a>
-- <a href="Firewall Configurations.md">Firewall Configurations</a>
+Click on the Hyper-Links to view Switch and Firewall configurations
+- <a href="Switch Configurations.md">**Switch Configurations**</a>
+- <a href="Firewall Configurations.md">**Firewall Configurations**</a>
+
+### DHCP server device configurations.
+This is how I configured the DHCP.
+![image](https://github.com/user-attachments/assets/136bcc25-98d4-4920-a319-d06ed6e65227)
+
 
 
