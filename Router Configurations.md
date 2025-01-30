@@ -57,3 +57,23 @@ exit
 
 do write
 ```
+## OSPF configuration on the firewall, routers and switch
+
+```
+ip routing
+router ospf 35
+router-id 1.1.4.4
+network 197.200.100.0 0.0.0.3 area 0
+network 20.20.20.0 0.0.0.3 area 0
+exit
+do write
+
+ip routing
+router ospf 35
+router-id 1.1.5.5
+network 20.20.20.0 0.0.0.3 area 0
+network 30.30.30.1 0.255.255.255 area 0
+exit
+do write
+```
+
