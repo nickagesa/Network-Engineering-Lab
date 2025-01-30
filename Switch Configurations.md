@@ -219,5 +219,7 @@ exit
 
 do write
 ```
+## OSPF configuration on the firewall, routers and switch
+
 
 
