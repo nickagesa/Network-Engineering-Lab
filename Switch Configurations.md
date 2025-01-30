@@ -11,12 +11,12 @@ configure terminal
 hostname DMZ-switch
 enable password Simba
 
-! comment: banner Massage Of The Day
+! Banner Massage Of The Day
 banner motd *UNAUTHORIZED ACCESS IS SUBJECT TO JAIL TIME*!!!
 username admin password Simba
 ip domain-name simba.co.ke
 
-! comment: Password for console 0
+! Password for console 0
 line console 0
 password Simba
 login
@@ -33,8 +33,8 @@ do write
 
 ## Vlan configuration
 The following commands were used to configure Vlans on simba-assess-switch_1, simba-assess-switch_2 and simba-assess-switch_3
-```
 
+```
 vlan 50
 name LAN
 vlan 60
@@ -42,6 +42,10 @@ name WLAN
 vlan 101
 name voIP
 
+! To see the vlans created
+do show vlan
+
+! Assigning ports to vlans
 interface range fa0/3-11
 switchport mode access
 switchport access vlan 50
@@ -64,4 +68,121 @@ switchport access vlan 60
 exit
 
 do write
+
+! To see the vlans and assigned ports
+show ip interface brief
+
+
+```
+### Core switch Configurations
+```
+vlan 50
+name LAN
+vlan 60
+name WLAN
+vlan 101
+name voIP
+
+! To see the vlans created
+do show vlan
+
+! Assigning ports to vlans
+! The Wireless Lan Controller (WLC) should be in the same vlan as the Light Access Points(LAP)
+int Gig1/0/2
+switchport mode access
+switchport access vlan 60
+exit
+
+do write
+```
+## Configuring EtherChannel, STP Portfast and BPDUguard.
+These commands were copied to help configure the other simba-assess-switch_1, simba-assess-switch_2 and simba-assess-switch_3. I just changed the channel-group  & port-channel to 2 and 3 respectively. 
+
+#### simba-assess-switch_1
+```
+int range fa0/1-2
+channel-group 1 mode active
+exit
+
+int port-channel 1
+switchport mode trunk
+exit
+
+int range fa0/3-24
+spanning-tree portfast
+spanning-tree bpduguard enable
+exit
+do write
+
+! view configurations
+do show start
+```
+
+#### simba-assess-switch_2
+```
+int range fa0/1-2
+channel-group 2 mode active
+exit
+
+int port-channel 2
+switchport mode trunk
+exit
+
+int range fa0/3-24
+spanning-tree portfast
+spanning-tree bpduguard enable
+exit
+do write
+```
+
+#### simba-assess-switch_3
+```
+int range fa0/1-2
+channel-group 3 mode active
+exit
+
+int port-channel 3
+switchport mode trunk
+exit
+
+int range fa0/3-24
+spanning-tree portfast
+spanning-tree bpduguard enable
+exit
+do write
+```
+### simba-Core-switch
+
+```
+! From simba-assess-switch_1
+interface range gig1/0/4-5
+channel-group 1 mode active
+exit
+
+interface port-channel 1
+switchport mode trunk
+exit
+
+! From simba-assess-switch_2
+interface range gig1/0/6-7
+channel-group 2 mode active
+exit
+
+interface port-channel 2
+switchport mode trunk
+exit
+
+! From simba-assess-switch_3
+interface range gig1/0/8-9
+channel-group 3 mode active
+exit
+
+interface port-channel 3
+switchport mode trunk
+exit
+
+! Connects to Cisco-Voice-Gateway Router
+interface range gig1/0/3
+switchport mode trunk
+exit
 ```
