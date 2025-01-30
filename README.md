@@ -107,7 +107,7 @@ The final design must integrate these requirements to ensure a secure, scalable,
 ![image](https://github.com/user-attachments/assets/05eb616a-e847-4351-b72e-04a809aa70f3)
 
 ## Configurations
-- <a href="https://github.com/nickagesa/Detection-Lab/tree/main">Switch Configurations</a>
+- <a href="Switch Configurations.md">Switch Configurations</a>
 - <a href="https://github.com/nickagesa/Detection-Lab/tree/main">Firewall Configurations</a>
 
 
