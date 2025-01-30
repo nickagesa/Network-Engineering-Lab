@@ -110,6 +110,7 @@ The final design must integrate these requirements to ensure a secure, scalable,
 Click on the Hyper-Links to view Switch and Firewall configurations
 - <a href="Switch Configurations.md">**Switch Configurations**</a>
 - <a href="Firewall Configurations.md">**Firewall Configurations**</a>
+- <a href="Router Configurations.md">**Router Configurations**</a>
 
 ### DHCP server device configurations.
 This is how I configured the DHCP.
