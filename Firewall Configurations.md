@@ -61,18 +61,21 @@ I first configured NAT to allow for internet connection.
 ```
 ! **Enable NAT (You create object networks)**
 ! **LAN Network to access internet**
+
 object network INSIDE-OUTSIDE
 subnet 192.168.10.0 255.255.255.0
 nat (INSIDE,OUTSIDE) dynamic interface
 exit
 
 ! **WLAN (Wireless Controller LAN)**
+
 object network INSIDE-OUTSIDE2
 subnet 10.20.0.0 255.255.0.0
 nat (INSIDE,OUTSIDE) dynamic interface
 exit
 
 ! **DMZ Network**
+
 object network INSIDE-OUTSIDE3
 subnet 10.10.10.0 255.255.255.240
 nat (DMZ,OUTSIDE) dynamic interface
@@ -85,7 +88,7 @@ exit
 route OUTSIDE 0.0.0.0 0.0.0.0 197.200.100.1
 
 ! *create Inspection policy to enable computers to get DHCP service**
-! **we will permit internal clients to send icmp to any machine in dmz also allow udp port 68 & 67 for dhcp, port 53 for DNS, 443, 8443 HTTPS and 80 http**
+! **we will permit internal clients to send icmp to any machine in dmz also allow udp port 68 & 67 for dhcp, port 53 for DNS, 443, 8443 HTTPS and 80 http etc**
 
 
 ! **Icmp**
@@ -134,7 +137,8 @@ access-list INSIDE-DMZ extended permit udp any any eq 993
 
 
 
-! *applying these rules to interfaces
+! **applying these rules to the DMZ interfaces**
+
 access-group INSIDE-DMZ in interface DMZ
 write memory
 
@@ -153,3 +157,5 @@ access-group INSIDE-OUTSIDE in interface OUTSIDE
 
 write memory
 ```
+
+
