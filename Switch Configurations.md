@@ -114,7 +114,7 @@ spanning-tree bpduguard enable
 exit
 do write
 
-! view configurations
+! **view configurations**
 do show start
 ```
 
@@ -152,9 +152,9 @@ exit
 do write
 ```
 ### simba-Core-switch
-
+Configure EtherChannel, STP Portfast, BPDUguard and Trunk for the Core Switch
 ```
-! From simba-assess-switch_1
+! **From simba-assess-switch_1**
 interface range gig1/0/4-5
 channel-group 1 mode active
 exit
@@ -163,7 +163,7 @@ interface port-channel 1
 switchport mode trunk
 exit
 
-! From simba-assess-switch_2
+! **From simba-assess-switch_2**
 interface range gig1/0/6-7
 channel-group 2 mode active
 exit
@@ -172,7 +172,7 @@ interface port-channel 2
 switchport mode trunk
 exit
 
-! From simba-assess-switch_3
+! **From simba-assess-switch_3**
 interface range gig1/0/8-9
 channel-group 3 mode active
 exit
@@ -181,7 +181,8 @@ interface port-channel 3
 switchport mode trunk
 exit
 
-! Connects to Cisco-Voice-Gateway Router
+! **Connects to Cisco-Voice-Gateway Router**
+! **This is trunk to allow passage of multiple vlan**
 interface range gig1/0/3
 switchport mode trunk
 exit
