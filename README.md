@@ -100,15 +100,8 @@ The final design must integrate these requirements to ensure a secure, scalable,
 ![image](https://github.com/user-attachments/assets/20e692a2-39de-400c-a729-e8d4effe1fd5)
 
 
-
-
-
-
-### Setup Details
--	Wazuh was deployed on a cloud server to monitor activity from endpoint devices.
--	Shuffle was installed on a separate cloud server for orchestration and automation.
--	The Hive was hosted on another cloud server for case management and collaboration.
--	The monitored endpoint: Windows machine (DESKTOP-8AAR6BV (002)).
+### Network Diagram
+![image](https://github.com/user-attachments/assets/df57ded0-37be-4541-8ad4-b3ecf4eceb97)
 
 ## Workflow
 1.	Threat Generation and Detection:
