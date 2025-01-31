@@ -111,7 +111,7 @@ Click on the Hyper-Links to view Switch and Firewall configurations
 - <a href="Switch Configurations.md">**Switch Configurations**</a>
 - <a href="Firewall Configurations.md">**Firewall Configurations**</a>
 - <a href="Router Configurations.md">**Router Configurations**</a>
-
+- <a href="WLC Configuration.md">**Wireless Lan Controller (WLC) Configuration**</a>
 ### DHCP server device configurations.
 This is how I configured the DHCP.
 ![image](https://github.com/user-attachments/assets/136bcc25-98d4-4920-a319-d06ed6e65227)
