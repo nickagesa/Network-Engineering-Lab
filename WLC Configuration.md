@@ -31,7 +31,7 @@ Password: Simba.123
 *Ref 6: Reviewing Settings*
 
 #### Login
-![image](https://github.com/user-attachments/assets/e6872e58-98be-4deb-8f05-4ef646542ba5)
+![image](https://github.com/user-attachments/assets/24982f9d-649a-428f-957e-1421e879cc2c)
 *Ref 7: Login page*
 
 ![image](https://github.com/user-attachments/assets/f3c84c44-86e0-4dff-806b-8b58ec22e89a)
