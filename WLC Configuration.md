@@ -28,7 +28,7 @@ SSID: Simba_Emp_Wifi
 Password: Simba.123
 
 ![image](https://github.com/user-attachments/assets/b0549037-78eb-4ff7-818c-c4683a77616f)
-*Ref 6: Reviwing Settings*
+*Ref 6: Reviewing Settings*
 
 #### Login
 ![image](https://github.com/user-attachments/assets/e6872e58-98be-4deb-8f05-4ef646542ba5)
