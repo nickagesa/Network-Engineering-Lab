@@ -141,8 +141,11 @@ access-list INSIDE-DMZ extended permit udp any any eq 993
 
 access-group INSIDE-DMZ in interface DMZ
 write memory
+```
+## Allowing Access to Azure Servers
+I configured the firewall to allow access to the Azure servers.
 
-
+```
 ! **allowing connection to Azure**
 
 
@@ -153,10 +156,11 @@ access-list INSIDE-OUTSIDE permit tcp any any eq 8080
 access-list INSIDE-OUTSIDE permit tcp any any eq 443
 access-list INSIDE-OUTSIDE permit tcp any any eq 8443
 
+! **applying these rules to the Outside interfaces**
+
 access-group INSIDE-OUTSIDE in interface OUTSIDE
 
 write memory
 ```
-## Firewall inspection policy configuration and NAT
 
 
