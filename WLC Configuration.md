@@ -18,7 +18,7 @@ Password: Simba.123
 
 #### Basic configurations
 ![image](https://github.com/user-attachments/assets/ab2de300-74cb-4ecd-8083-5ecfedc8db1e)
-*Ref 4: assigning Ip address*
+*Ref 4: Assigning Ip address*
 
 #### Creating Employees Wifi SSID
 ![image](https://github.com/user-attachments/assets/2148ebe8-b7f6-4194-becb-86de03a27ca4)
